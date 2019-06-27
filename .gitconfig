@@ -1,0 +1,13 @@
+[core]
+	excludesfile = /Users/daichi/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Daichi Hayashi
+	email = daichikuwa0618@gmail.com
+[commit]
+	template = /Users/daichi/.stCommitMsg
