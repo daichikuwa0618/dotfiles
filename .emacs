@@ -1,5 +1,12 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (when (eq system-type 'darwin)
-    (setq ns-command-modifier (quote meta)))
+  (setq ns-command-modifier (quote meta)))
 
 (set-language-environment 'Japanese)    ; 日本語環境
 (set-default-coding-systems 'utf-8-unix)    ; UTF-8 が基本
