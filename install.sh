@@ -1,10 +1,19 @@
-#!/bin/bash
+#! /bin/sh
 
+DOTPATH=$HOME/Documents/git/dotfiles
+
+echo "\$DOTPATH : $DOTPATH"
+echo "Created dotfile symbolic links."
 for f in .??*
 do
-    [[ "$f" == ".git" ]] && continue
-    [[ "$f" == ".DS_Store" ]] && continue
-    ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
+  # Exclude files
+  if [ "$f" = ".git" ] || [ "$f" = ".gitignore" ];then
+    continue
+  fi
 
-    echo "$f"
+  ln -sf "$DOTPATH"/"$f" "$HOME"/"$f"
+  if [ $? -eq 0 ]; then
+    printf "    %-25s -> %s\n" "\$DOTPATH/$f" "\$HOME/$f"
+  fi
 done
+echo ""
