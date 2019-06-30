@@ -24,11 +24,11 @@ autoload -Uz colors
 colors
 
 # theme pure
-#autoload -U promptinit; promptinit
-#prompt pure
+autoload -U promptinit; promptinit
+prompt pure
 
 # theme powerlevel9k
-zplug "bhilburn/powerlevel9k", use:"powerlevel9k.zsh-theme", as:theme, if:"source ~/.powerlevel9k"
+#zplug "bhilburn/powerlevel9k", use:"powerlevel9k.zsh-theme", as:theme, if:"source ~/.powerlevel9k"
 
 # emacs風のキーバインドに
 bindkey -e
@@ -161,4 +161,4 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load
