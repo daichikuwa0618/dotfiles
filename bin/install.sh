@@ -1,6 +1,6 @@
 #! /bin/sh
 
-DOTPATH=$HOME/Documents/git/dotfiles
+DOTPATH=~/Documents/git/dotfiles
 
 echo "\$DOTPATH : $DOTPATH"
 echo "Created dotfile symbolic links."
