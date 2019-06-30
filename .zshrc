@@ -7,6 +7,8 @@ zplug "chrissicool/zsh-256color"
 zplug "Tarrasch/zsh-colors"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "ascii-soup/zsh-url-highlighter"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
 
 # program
 zplug "voronkovich/mysql.plugin.zsh"
@@ -22,8 +24,11 @@ autoload -Uz colors
 colors
 
 # theme pure
-autoload -U promptinit; promptinit
-prompt pure
+#autoload -U promptinit; promptinit
+#prompt pure
+
+# theme powerlevel9k
+zplug "bhilburn/powerlevel9k", use:"powerlevel9k.zsh-theme", as:theme, if:"source ~/.powerlevel9k"
 
 # emacs風のキーバインドに
 bindkey -e
@@ -146,3 +151,14 @@ alias -g G='| grep'
 # vim:set ft=zsh:
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load --verbose
