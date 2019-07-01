@@ -1,8 +1,15 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'patstockwell/vim-monokai-tasty'
+
+call plug#end()
+
 " 行番号を表示
 set number
 
-" カラー設定
-colorscheme adventurous
+" theme
+"colorscheme molokai
+colorscheme vim-monokai-tasty
 set t_Co=256
 
 " シンタックスハイライトを有効
@@ -68,7 +75,7 @@ nnoremap - <c-x>
 inoremap <silent> jj <ESC>
 inoremap <silent> っj <ESC>
 
-" よく使う割に打ちにくいキーを楽にする
+" SPC+h,l = go to top or tail of sentence
 noremap <Space>h ^
 noremap <Space>l $
 
