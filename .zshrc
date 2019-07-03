@@ -17,7 +17,10 @@ zplug "voronkovich/mysql.plugin.zsh"
 zplug "marzocchi/zsh-notify"
 zplug "oknowton/zsh-dwim"
 
-
+# 初回シェル時のみ tmux実行
+if [ $SHLVL = 1 ]; then
+  tmux
+fi
 
 # 色を使用できるようにする
 autoload -Uz colors
