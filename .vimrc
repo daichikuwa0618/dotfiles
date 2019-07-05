@@ -19,6 +19,8 @@ set clipboard+=unnamed
 set mouse=a
 " sshでログインしている場合などに使う
 set ttymouse=xterm2
+" enable to open other files even when editting buffer
+set hidden
 
 " ====================
 " === moving settings ===
@@ -52,6 +54,9 @@ noremap <Space>l $
 set number
 " theme
 colorscheme vim-monokai-tasty
+" force background-color to be black
+set background=dark
+highlight Normal guibg=black guifg=white
 " use 256 colors
 set t_Co=256
 " シンタックスハイライトを有効
@@ -91,3 +96,16 @@ vnoremap >  >gv
 vnoremap <  <gvnoremap {}  {}<left>
 nnoremap + <c-a>
 nnoremap - <c-x>
+
+" ====================
+" === Tab setting ===
+" ====================
+" show Tab as '>-'
+set list listchars=tab:\▸\-
+" replase Tab as half-space
+set expandtab
+" Tab width in not head of line
+set tabstop=2
+" Tab width in head of line
+set shiftwidth=2
+"
