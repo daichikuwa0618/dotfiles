@@ -30,9 +30,6 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
-" j, k による移動を折り返されたテキストでも自然に振る舞うように変更
-nnoremap j gj
-nnoremap k gk
 " 行が折り返し表示されていた場合、行単位ではなく表示行単位でカーソルを移動する
 nnoremap j gj
 nnoremap k gk
@@ -42,7 +39,8 @@ nnoremap <up> gk
 vnoremap v $h
 " jjでエスケープ
 inoremap <silent> jj <ESC>
-inoremap <silent> っj <ESC>
+" escape by typing jk
+inoremap <silent> jk <ESC>
 " SPC+h,l = go to top or tail of sentence
 noremap <Space>h ^
 noremap <Space>l $
@@ -74,15 +72,15 @@ set smartindent
 " 検索のハイライトをESC 2回で消す
 nnoremap <ESC><ESC> :nohlsearch<CR>
 " 大文字小文字を区別しない
-set ignorecase          
+set ignorecase
 " 検索文字に大文字がある場合は大文字小文字を区別
-set smartcase           
+set smartcase
 " インクリメンタルサーチ
-set incsearch           
+set incsearch
 " 対応する括弧などをハイライト表示する
-set showmatch           
+set showmatch
 " 対応括弧のハイライト表示を3秒にする
-set matchtime=3         
+set matchtime=3
 " 対応括弧に'<'と'>'のペアを追加
 set matchpairs& matchpairs+=<:>
 inoremap ""  ""<left>
