@@ -133,7 +133,7 @@ brew cask install google-chrome
 # brew cask install ccleaner
 brew cask install alfred
 # brew cask install cheatsheet
-brew cask install karabiner
+brew cask install karabiner-elements
 # brew cask install gimp
 # brew cask install inkscape
 brew cask install alacritty
