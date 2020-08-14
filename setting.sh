@@ -61,12 +61,6 @@ brew doctor
 brew update  #update homebrew itself
 
 ###########################################
-# INSTALL HomeBrew-Cask
-###########################################
-printf '\033[33m%s\033[m\n' 'installing homebrew cask'
-brew tap caskroom/cask
-
-###########################################
 # INSTALL mas-cli
 ###########################################
 printf '\033[33m%s\033[m\n' 'installing mas-cli'
