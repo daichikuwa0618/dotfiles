@@ -80,16 +80,16 @@ fi
 ###########################################
 printf '\033[33m%s\033[m\n' 'installing packages by mas-cli'
 
-mas install 497799835    # Xcode
+#mas install 497799835    # Xcode
 #mas install 414298354    # ToyViewer
-mas install 539883307    # LINE
+#mas install 539883307    # LINE
 mas install 803453959    # Slack
 mas install 1024640650   # cotEditor
-mas install 409183694    # Keynote
-mas install 409203825    # Numbers
-mas install 409201541    # Pages
+#mas install 409183694    # Keynote
+#mas install 409203825    # Numbers
+#mas install 409201541    # Pages
 mas install 425424353    # The Unarchiver
-mas install 417375580    # BetterSnapTool
+#mas install 417375580    # BetterSnapTool
 #mas install 405399194    # Kindle
 #mas install 410628904    # Wunderlist
 #mas install 406056744    # Evernote
@@ -109,19 +109,26 @@ brew install git
 brew install vim
 # brew install nkf
 # brew install imagemagick
+brew install carthage
+brew install ffmpeg
+brew install mint
+brew install skhd
+brew install spacebar
+brew install yabai
+brew install xcodegen
 
 ###########################################
 # by homebrew-cask
 ###########################################
 # brew cask install aquaterm
 # brew cask install xquartz
-brew cask install mactex
+# brew cask install mactex
 # brew cask install mendeley
 # brew cask install emacs
 # brew cask install atom
 brew cask install google-japanese-ime
 brew cask install google-chrome
-brew cask install font-source-code-pro
+# brew cask install font-source-code-pro
 # brew cask install firefox
 # brew cask install google-backup-and-sync
 # brew cask install dropbox
@@ -135,6 +142,13 @@ brew cask install alfred
 brew cask install karabiner
 # brew cask install gimp
 # brew cask install inkscape
+brew cask install alacritty
+brew cask install visual-studio-code
+brew cask install sourcetree
+brew cask install notion
+brew cask install obs
+brew cask install obs-virtualcam
+brew cask install zoomus
 
 ###########################################
 # upgrade packages installed by brew
