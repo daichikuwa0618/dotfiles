@@ -149,3 +149,7 @@ brew cask install zoomus
 ###########################################
 printf '\033[33m%s\033[m\n' 'updating homebrew'
 brew upgrade
+
+# zsh
+# change default shell to zsh
+chsh -s /bin/zsh
