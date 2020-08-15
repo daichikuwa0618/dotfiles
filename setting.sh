@@ -106,9 +106,9 @@ brew install vim
 brew install carthage
 brew install ffmpeg
 brew install mint
-brew install skhd
+brew install koekeishiya/formulae/skhd
 brew install spacebar
-brew install yabai
+brew install koekeishiya/formulae/yabai
 brew install xcodegen
 
 ###########################################
