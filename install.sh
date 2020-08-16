@@ -1,13 +1,13 @@
 #! /bin/sh
 
-DOTPATH=~/dotfiles
+DOTPATH=~/dotfiles/dotfiles
 
 echo "\$DOTPATH : $DOTPATH"
 echo "Created dotfile symbolic links."
 for f in .??*
 do
   # Exclude files
-  if [ "$f" = ".git" ] || [ "$f" = ".gitignore" ] || [ "$f" = ".zprofile" ] || [ "$f" = ".zshrc" ] || [ "$f" = ".bash_profile" ] || [ "$f" = ".bashrc" ];then
+  if [ "$f" = ".gitmodules" ] || [ "$f" = ".git" ] || [ "$f" = ".gitconfig" ] || [ "$f" = ".zprofile" ] || [ "$f" = ".zshrc" ] || [ "$f" = ".bash_profile" ] || [ "$f" = ".bashrc" ];then
     continue
   fi
 
