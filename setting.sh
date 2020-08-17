@@ -143,6 +143,7 @@ brew cask install notion
 brew cask install obs
 brew cask install obs-virtualcam
 brew cask install zoomus
+brew cask install bettertouchtool 
 
 ###########################################
 # upgrade packages installed by brew
