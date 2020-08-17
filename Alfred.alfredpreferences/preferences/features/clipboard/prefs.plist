@@ -19,7 +19,5 @@
 	<integer>3</integer>
 	<key>persistForImages</key>
 	<integer>3</integer>
-	<key>snippetKeywordEnabled</key>
-	<false/>
 </dict>
 </plist>
