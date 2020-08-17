@@ -107,8 +107,8 @@ brew install carthage
 brew install ffmpeg
 brew install mint
 brew install koekeishiya/formulae/skhd
-brew install spacebar
 brew install koekeishiya/formulae/yabai
+brew install cmacrae/formulae/spacebar
 brew install xcodegen
 
 ###########################################
@@ -144,6 +144,11 @@ brew cask install obs
 brew cask install obs-virtualcam
 brew cask install zoomus
 brew cask install bettertouchtool 
+
+# install font by cask
+brew tap homebrew/cask-fonts
+brew cask install font-source-han-code-jp
+brew cask install font-mplus
 
 ###########################################
 # upgrade packages installed by brew
