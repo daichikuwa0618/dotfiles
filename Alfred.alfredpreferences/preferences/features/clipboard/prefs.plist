@@ -19,5 +19,7 @@
 	<integer>3</integer>
 	<key>persistForImages</key>
 	<integer>3</integer>
+	<key>snippetMatchFields</key>
+	<integer>1</integer>
 </dict>
 </plist>
