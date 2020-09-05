@@ -1,0 +1,265 @@
+<h1>Bitwarden Alfred Workflow</h1>
+
+<blockquote>
+<p>Access your Bitwarden passwords, secrets, attachments and more via this powerful Alfred Workflow</p>
+</blockquote>
+
+<h2>Features</h2>
+
+<ul>
+<li>Completely rewritten in go</li>
+<li>fast secret / item search thanks to caching (no secrets are cached only the keys/names)
+
+<ul>
+<li>cache is encrypted</li>
+</ul></li>
+<li>access to (almost) all object information via this workflow</li>
+<li>download attachments via this workflow</li>
+<li>show favicons of the websites</li>
+<li>auto update</li>
+<li>uses the <a href="https://pkg.go.dev/github.com/deanishe/awgo?tab=doc">awgo</a> framework/library</li>
+<li>many customizations possible</li>
+</ul>
+
+<blockquote>
+<p>Requires Alfred 4.1 or newer; NOT tested with Alfred 3</p>
+</blockquote>
+
+<p><img src="./assets/bitwarden-v2.gif" alt="Bitwarden V2 - Alfred Workflow Demo" /></p>
+
+<h2>Installation</h2>
+
+<ul>
+<li><a href="https://github.com/blacs30/bitwarden-alfred-workflow/releases">Download the latest release</a></li>
+<li>Open the downloaded file in Finder</li>
+<li>Make sure that the <a href="https://github.com/bitwarden/cli#downloadinstall">Bitwarden CLI</a> is installed</li>
+<li>If running on macOS Catalina or later, you <em><strong>MUST</strong></em> add Alfred to the list of security exceptions for running unsigned software. See <a href="https://github.com/deanishe/awgo/wiki/Catalina">this guide</a> for instructions on how to do this.
+
+<ul>
+<li><sub>Yes, this sucks and is annoying, but there is unfortunately is no easy way around this. macOS requires a paying Developer account for proper app notarization. I&rsquo;m afraid I&rsquo;m not willing to pay a yearly subscription fee to Apple just so that this (free and open source) project doesn&rsquo;t pester macOS Gatekeeper.</sub></li>
+</ul></li>
+</ul>
+
+<h2>PATH configuration</h2>
+
+<p>In many cases the bw executable is located in a path outside of the default system PATH.<br>
+Please configure the Alfred Worklow variables PATH accordingly.<br>
+In a normal terminal type <code>which bw</code> and copy the dirname (everything except the &ldquo;bw&rdquo;) into the PATH workflow variable.<br>
+The best is to append it to the existing string and separate it by a colon (:)</p>
+
+<p><img src="./assets/workflow-path-config.gif" alt="Workflow PATH config" /></p>
+
+<h2>Usage</h2>
+
+<p>To use, activate Alfred and type <code>.bw</code> to trigger this workflow. From there:</p>
+
+<ul>
+<li>type <code>.bwauth</code> for login/logout/unlock/lock</li>
+<li>type <code>.bwconfig</code> for settings/sync/workflow update/help/issue reports</li>
+<li>type any search term to search for secrets/notes/identities/cards</li>
+<li>modifier keys and actions are presented in the subtitle, different actions are available depending on the object type</li>
+</ul>
+
+<h2>Advanced Features / Configuration</h2>
+
+<ul>
+<li><a href="https://pkg.go.dev/github.com/deanishe/awgo/fuzzy?tab=doc">Fuzzy filtering</a> a la Sublime Text is supported</li>
+<li>Configurable <a href="https://www.alfredapp.com/help/workflows/advanced/variables/#environment">workflow environment variables</a></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Comment</th>
+<th>Default Value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>2FA_ENABLED</td>
+<td>enables or disables 2FA for login (can be set via .bwconfig )</td>
+<td>true</td>
+</tr>
+
+<tr>
+<td>2FA_NODE</td>
+<td>sets the mode for the 2FA (can be set via .bwconfig ), 0 app, 1, email (not tested), 2 duo (not tested), 3 yubikey (not tested), 4 U2F (not tested)</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>BW_EXEC</td>
+<td>defines the binary/executable for the Bitwarden CLI command</td>
+<td>bw</td>
+</tr>
+
+<tr>
+<td>bw_keyword</td>
+<td>defines the keyword which opens the Bitwarden Alfred Workflow</td>
+<td>.bw</td>
+</tr>
+
+<tr>
+<td>bwauth_keyword</td>
+<td>defines the keyword which opens the Bitwarden authentications of the Alfred Workflow</td>
+<td>.bwauth</td>
+</tr>
+
+<tr>
+<td>bwconf_keyword</td>
+<td>defines the keyword which opens the Bitwarden configuration/settings of the Alfred Workflow</td>
+<td>.bwconfig</td>
+</tr>
+
+<tr>
+<td>EMAIL</td>
+<td>the email which to use for the login via the Bitwarden CLI, will be read from the data.json of the Bitwarden CLI if present</td>
+<td>&rdquo;&rdquo;</td>
+</tr>
+
+<tr>
+<td>EMPTY_DETAIL_RESULTS</td>
+<td>Show all information in the detail view, also if the content is empty</td>
+<td>false</td>
+</tr>
+
+<tr>
+<td>ICON_CACHE_ENABLED</td>
+<td>Download icons for login items if a URL is set</td>
+<td>true</td>
+</tr>
+
+<tr>
+<td>ICON_CACHE_AGE</td>
+<td>This defines how old the icon cache can get in minutes, if expired the Workflow will download icons again. If icons are missing the workflow will also try to download them unrelated to this timeout</td>
+<td>43200 (1 month)</td>
+</tr>
+
+<tr>
+<td>AUTO_FETCH_ICON_CACHE_AGE</td>
+<td>This defines how often the Workflow should check for an icon if is missing, it doesn&rsquo;t need to do it on every run hence this cache</td>
+<td>1440 (1 day)</td>
+</tr>
+
+<tr>
+<td>MAX_RESULTS</td>
+<td>The number of items to display maximal in the search view</td>
+<td>1000</td>
+</tr>
+
+<tr>
+<td>MODIFIER_1</td>
+<td>The first modifier key combination, possible options, which can be combined by comma separation, are &ldquo;cmd,alt/opt,ctrl,shift,fn&rdquo;</td>
+<td>alt</td>
+</tr>
+
+<tr>
+<td>MODIFIER_2</td>
+<td>The first modifier key combination, possible options, which can be combined by comma separation, are &ldquo;cmd,alt/opt,ctrl,shift,fn&rdquo;</td>
+<td>shift</td>
+</tr>
+
+<tr>
+<td>MODIFIER_3</td>
+<td>The first modifier key combination, possible options, which can be combined by comma separation, are &ldquo;cmd,alt/opt,ctrl,shift,fn&rdquo;</td>
+<td>ctrl</td>
+</tr>
+
+<tr>
+<td>MODIFIER_4</td>
+<td>The first modifier key combination, possible options, which can be combined by comma separation, are &ldquo;cmd,alt/opt,ctrl,shift,fn&rdquo;</td>
+<td>cmd,opt</td>
+</tr>
+
+<tr>
+<td>OUTPUT_FOLDER</td>
+<td>The folder to which attachments should be saved when the action is triggered. Default is \$HOME/Downloads. &ldquo;~&rdquo; can be used as well.</td>
+<td>&rdquo;&rdquo;</td>
+</tr>
+
+<tr>
+<td>PATH</td>
+<td>The PATH env variable which is used to search for executables (like the Bitwarden CLI configured with BW_EXEC, security to get and set keychain objects)</td>
+<td>/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/bin:/usr/sbin</td>
+</tr>
+
+<tr>
+<td>REORDERING_DISABLED</td>
+<td>If set to false the items which are often selected appear further up in the results.</td>
+<td>true</td>
+</tr>
+
+<tr>
+<td>SERVER_URL</td>
+<td>Set the server url if you host your own Bitwarden instance - you can also set separate domains for api,webvault etc e.g. <code>--api http://localhost:4000 --identity http://localhost:33656</code></td>
+<td><a href="https://bitwarden.com">https://bitwarden.com</a></td>
+</tr>
+
+<tr>
+<td>SYNC_CACHE_AGE</td>
+<td>This defines how old the sync cache can get, if expired the Workflow will trigger a new sync with Bitwarden</td>
+<td>1440 (1 day)</td>
+</tr>
+
+<tr>
+<td>CACHE_AGE</td>
+<td>This defines how old the cached items can get, if expired the Workflow will trigger a new cache refresh with Bitwarden (this does not involve a sync with the Bitwarden server)</td>
+<td>1440 (1 day)</td>
+</tr>
+</tbody>
+</table>
+
+<h1>Develop locally</h1>
+
+<ol>
+<li><p>Install alfred cli <br>
+<code>go get -u github.com/jason0x43/go-alfred/alfred</code></p></li>
+
+<li><p>Clone <a href="https://github.com/blacs30/bitwarden-alfred-workflow">this repo</a>.</p></li>
+
+<li><p>Link the workflow directory with Alfred <br>
+<code>cd workflow; alfred link</code></p></li>
+
+<li><p>Install dependency and run the first build<br>
+<code>make build</code></p></li>
+</ol>
+
+<h3>Colors and Icons</h3>
+
+<p><em>Light blue</em></p>
+
+<p>Hex: #175DDC <br>
+RGB: 23,93,220</p>
+
+<p><em>Darker blue</em></p>
+
+<p>Hex: #134db7 <br>
+RGB: 20,81,192</p>
+
+<p>Get icons as pngs here <a href="https://fa2png.app/">https://fa2png.app/</a> and this is the browser <a href="https://fontawesome.com/cheatsheet">https://fontawesome.com/cheatsheet</a></p>
+
+<h1>Licensing and Thanks</h1>
+
+<p>The icons are based on <a href="https://github.com/bitwarden/brand">Bitwarden Brand</a> , <a href="https://fontawesome.com/">Font Awesome</a> and <a href="https://materialdesignicons.com/">Material Design</a> Icons.</p>
+
+<p>Parts of the README are taken over from <a href="https://github.com/rkoval/alfred-aws-console-services-workflow">alfred-aws-console-services-workflow</a></p>
+
+<h2>Source that helped me to get started</h2>
+
+<ul>
+<li><a href="https://medium.com/@nikitavoloboev/writing-alfred-workflows-in-go-2a44f62dc432">Writing Alfred workflows in Go</a></li>
+<li><a href="https://github.com/deanishe/awgo/blob/master/_examples/update/main.go">Example of the awgo package</a></li>
+<li><a href="https://pkg.go.dev/github.com/deanishe/awgo?tab=doc">awgo package</a></li>
+</ul>
+
+<h2>Troubleshooting</h2>
+
+<ul>
+<li>&ldquo;I&rsquo;m seeing the following dialog when running the workflow&rdquo;</li>
+</ul>
+
+<p><img src="./assets/catalina-warning.png" alt="image" /></p>
+
+<p>Per <a href="https://github.com/blacs30/bitwarden-alfred-workfloww#installation">the installation steps</a>, you <strong><em>MUST</em></strong> add Alfred to the list of Developer Tool exceptions for Alfred to run any workflow that contains an executable (like this one)</p>
