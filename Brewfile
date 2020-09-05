@@ -7,6 +7,7 @@ tap "homebrew/cask-fonts"
 
 # Homebrew
 
+brew "bitwarden-cli"
 brew "carthage"
 brew "ffmpeg"
 # brew "gcc"
@@ -34,6 +35,7 @@ cask "alfred"
 cask "bettertouchtool"
 # cask "ccleaner"
 # cask "cheatsheet"
+cask "dash"
 cask "discord"
 # cask "dropbox"
 cask "emacs"
@@ -80,6 +82,7 @@ mas "CommentScreen", id:1450950860
 mas "cotEditor", id: 1024640650
 # mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
+mas "Manico", id: 724472954
 # mas "Mathpix", id: 1349670778
 mas "Nozbe", id: 508957583 
 mas "Slack", id: 803453959
