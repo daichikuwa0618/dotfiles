@@ -18,3 +18,7 @@ alias zshrc='vi ~/dotfiles/dotfiles/.zshrc'
 alias reload='source ~/.zshrc'
 alias pana-dir='cd ~/work/panasonic-ios'
 
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
