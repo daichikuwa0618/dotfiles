@@ -14,11 +14,23 @@ fi
 alias dotfiles='cd $HOME/dotfiles'
 alias ...='cd ../../..'
 alias ....='cd ../../../..'
+alias cd='cdls'
 alias zshrc='vi ~/dotfiles/dotfiles/.zshrc'
 alias reload='source ~/.zshrc'
 alias pana-dir='cd ~/work/panasonic-ios'
+alias avatara-dir='cd ~/work/avatara-ios-prototype'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+function cdls() {
+  # cdがaliasでループするので\をつける
+  \cd "$@" && ls
+}
+
+function gwt() {
+    GIT_CDUP_DIR=`git rev-parse --show-cdup`
+    git worktree add ${GIT_CDUP_DIR}git-worktrees/$1 -b $1
+}
 
