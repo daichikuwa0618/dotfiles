@@ -38,6 +38,7 @@ cask "alfred"
 cask "bettertouchtool"
 # cask "ccleaner"
 # cask "cheatsheet"
+# cask "clickup"
 cask "dash"
 cask "discord"
 # cask "dropbox"
@@ -54,7 +55,7 @@ cask "karabiner-elements"
 # cask "macs-fan-control"
 # cask "mactex"
 # cask "mendeley"
-cask "miro"
+# cask "miro"
 cask "notion"
 cask "obs"
 cask "obs-virtualcam"
@@ -69,10 +70,12 @@ cask "quicklook-json"
 # cask "scroll-reverser"
 # cask "skype"
 cask "sourcetree"
-cask "station"
+# cask "spotify"
+# cask "station"
 # cask "suspicious-package"
 cask "the-unarchiver"
-cask "ticktick"
+# cask "ticktick"
+# cask "toggl"
 cask "visual-studio-code"
 cask "webpquicklook"
 # cask "xquartz"
@@ -86,9 +89,9 @@ mas "cotEditor", id: 1024640650
 mas "Dropover", id: 1355679052
 # mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
-mas "Manico", id: 724472954
+# mas "Manico", id: 724472954
 # mas "Mathpix", id: 1349670778
-mas "Nozbe", id: 508957583 
+# mas "Nozbe", id: 508957583
 mas "Slack", id: 803453959
 # mas "ToyViewer", id: 414298354
 mas "Xcode", id: 497799835
