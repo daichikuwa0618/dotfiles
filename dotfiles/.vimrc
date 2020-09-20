@@ -4,6 +4,7 @@
 call plug#begin('~/.vim/plugged')
   " monokai-tasty theme
   Plug 'patstockwell/vim-monokai-tasty'
+  Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 "====================
