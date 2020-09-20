@@ -12,9 +12,9 @@ fi
 
 # Customize to your needs...
 alias dotfiles='cd $HOME/dotfiles'
-alias ...='cd ../../..'
-alias ....='cd ../../../..'
 alias cd='cdls'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias zshrc='vi ~/dotfiles/dotfiles/.zshrc'
 alias reload='source ~/.zshrc'
 alias pana-dir='cd ~/work/panasonic-ios'
