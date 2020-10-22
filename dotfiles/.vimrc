@@ -22,6 +22,8 @@ set mouse=a
 set ttymouse=xterm2
 " enable to open other files even when editting buffer
 set hidden
+" バックスペースの削除の設定
+set backspace=indent,eol,start
 
 " ====================
 " === moving settings ===
