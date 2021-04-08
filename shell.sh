@@ -7,14 +7,14 @@ set -o pipefail
 #####################
 ## Prezto
 #####################
-## clone Prezto
-#git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-#
-## setup Prezto
-#setopt EXTENDED_GLOB
-#for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-#  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-#done
+# clone Prezto
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+# setup Prezto
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
 
 ####################
 # sudo
@@ -30,6 +30,7 @@ if ! grep -Eq '^auth\s.*\spam_tid\.so$' /etc/pam.d/sudo; then
 fi
 
 # enable TouchID in tmux sudo
+
 if ! grep -Eq '^auth\s.*\spam_reattach\.so$' /etc/pam.d/sudo; then
   ( set -e; set -o pipefail
     # install pam_reattach.so if don't have
@@ -47,6 +48,7 @@ if ! grep -Eq '^auth\s.*\spam_reattach\.so$' /etc/pam.d/sudo; then
 fi
 
 # enable Watch auth in tmux sudo
+
 if ! grep -Eq '^auth\s.*\spam_watchid\.so$' /etc/pam.d/sudo; then
   ( set -e; set -o pipefail
     # install pam_watchid.so if don't have
