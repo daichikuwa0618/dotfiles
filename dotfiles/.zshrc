@@ -7,7 +7,7 @@
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+    source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
@@ -17,17 +17,25 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias zshrc='vi ~/dotfiles/dotfiles/.zshrc'
 alias reload='source ~/.zshrc'
-alias pana-dir='cd ~/work/panasonic-ios'
-alias avatara-dir='cd ~/work/AVATARA'
 alias towards14='cd ~/work/Towards14'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# goenv
+
+export PATH="$HOME/.goenv/bin:$PATH"
+export GOENV_DISABLE_GOPATH=1
+eval "$(goenv init -)"
+
+# Android
+export JAVA_HOME=/Applications/Android\ Studio\ Preview.app/Contents/jre/jdk/Contents/Home
+export PATH=/Applications/Android\ Studio\ Preview.app/Contents/jre/jdk/Contents/Home/bin:$PATH
+
 function cdls() {
-  # cdがaliasでループするので\をつける
-  \cd "$@" && ls
+    # cdがaliasでループするので\をつける
+    \cd "$@" && ls
 }
 
 function gwt() {
@@ -55,45 +63,8 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
     fi
 fi
 
-# ====== peco ========
-# see: https://qiita.com/reireias/items/fd96d67ccf1fdffb24ed
-
-# history
-HISTFILE=$HOME/.zsh-history
-HISTSIZE=100000
-SAVEHIST=1000000
-
-# share .zshhistory
-setopt inc_append_history
-setopt share_history
-
-function peco-history-selection() {
-  BUFFER=`history -n 1 | tac  | awk '!a[$0]++' | peco`
-  CURSOR=$#BUFFER
-  zle reset-prompt
-}
-
-zle -N peco-history-selection
-bindkey '^R' peco-history-selection
-
-# cdr
-if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
-  autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
-  add-zsh-hook chpwd chpwd_recent_dirs
-  zstyle ':completion:*' recent-dirs-insert both
-  zstyle ':chpwd:*' recent-dirs-default true
-  zstyle ':chpwd:*' recent-dirs-max 1000
-  zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
+# load secure file
+SECURE_FILE="secret.zshrc"
+if [[ -f $SECURE_FILE ]]; then
+    source SECURE_FILE
 fi
-
-function peco-cdr () {
-  local selected_dir="$(cdr -l | sed 's/^[0-9]\+ \+//' | peco --prompt="cdr >" --query "$LBUFFER")"
-  if [ -n "$selected_dir" ]; then
-    BUFFER="cd ${selected_dir}"
-    zle accept-line
-  fi
-}
-
-zle -N peco-cdr
-bindkey '^E' peco-cdr
-
