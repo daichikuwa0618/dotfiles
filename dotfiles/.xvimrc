@@ -2,8 +2,8 @@
 " === moving settings ===
 " ====================
 " 行が折り返し表示されていた場合、行単位ではなく表示行単位でカーソルを移動する
-nnoremap j gj
-nnoremap k gk
+"nnoremap j gj
+"nnoremap k gk
 " vを二回で行末まで選択
 vnoremap v $h
 " jjでエスケープ

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "            return Single.error(APIError.unknown)\n                .delaySubscription(.seconds(1), scheduler: ConcurrentDispatchQueueScheduler(qos: .default))\n",
+    "uid" : "2E08F65A-A3C6-4DBD-A4F5-1AADA5875579",
+    "name" : "Signal Error",
+    "keyword" : "signal error"
+  }
+}
