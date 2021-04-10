@@ -2,8 +2,8 @@ set -e
 set -o pipefail
 
 # change default shell to zsh
-#chsh -s /bin/zsh
-#
+chsh -s /bin/zsh
+
 #####################
 ## Prezto
 #####################

@@ -1,5 +1,6 @@
 #!/bin/bash
-sh setting.sh
+sh init.sh
+sh macos.sh
 sh install.sh
 sh shell.sh
 sh vim.sh
