@@ -17,4 +17,9 @@ do
     printf "    %-25s -> %s\n" "\$DOTPATH/$f" "\$HOME/$f"
   fi
 done
+
+# secret files
+ln -sf "$DOTPATH"/secret.zshrc "$HOME"/secret.zshrc
+printf "    %-25s -> %s\n" "\$DOTPATH/secret.zshrc" "\$HOME/secret.zshrc"
+
 echo ""

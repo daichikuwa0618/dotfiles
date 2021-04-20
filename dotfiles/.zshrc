@@ -66,5 +66,5 @@ fi
 # load secure file
 SECURE_FILE="secret.zshrc"
 if [[ -f $SECURE_FILE ]]; then
-    source SECURE_FILE
+    source "$SECURE_FILE"
 fi
