@@ -18,6 +18,8 @@ alias ....='cd ../../..'
 alias zshrc='vi ~/dotfiles/dotfiles/.zshrc'
 alias reload='source ~/.zshrc'
 alias towards14='cd ~/work/Towards14'
+alias vi='nvim'
+alias vim='nvim'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"

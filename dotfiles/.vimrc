@@ -18,8 +18,6 @@ set showcmd
 set clipboard+=unnamed
 " マウスを使う設定
 set mouse=a
-" sshでログインしている場合などに使う
-set ttymouse=xterm2
 " enable to open other files even when editting buffer
 set hidden
 " バックスペースの削除の設定

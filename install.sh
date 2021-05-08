@@ -18,6 +18,9 @@ do
   fi
 done
 
+# NeoVim の設定ファイルと Vim の config ファイルを統一する
+ln -sf "$DOTPATH"/.vimrc "$HOME"/.config/nvim/init.vim
+printf "    %-25s -> %s\n" "\$DOTPATH/.vimrc" "\$HOME/.config/nvim/init.vim"
 # secret files
 ln -sf "$DOTPATH"/secret.zshrc "$HOME"/secret.zshrc
 printf "    %-25s -> %s\n" "\$DOTPATH/secret.zshrc" "\$HOME/secret.zshrc"
