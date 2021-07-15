@@ -11,8 +11,8 @@ tap "homebrew/cask-fonts"
 # Homebrew
 
 brew "bitwarden-cli"
-brew "carthage"
-brew "fastlane"
+# brew "carthage"
+# brew "fastlane"
 brew "ffmpeg"
 # brew "gcc"
 brew "gh"
@@ -48,6 +48,7 @@ brew "yabai"
 # cask "alacritty"
 cask "alfred"
 cask "android-studio"
+cask "appcode"
 # cask "aquaterm"
 # cask "atom"
 cask "authy"
@@ -77,9 +78,11 @@ cask "hammerspoon"
 cask "iterm2"
 # cask "oracle-jdk"
 cask "karabiner-elements"
+cask "keyboard-maestro"
+cask "keycastr"
 # cask "macs-fan-control"
 # cask "mactex"
-cask "meetingbar"
+# cask "meetingbar"
 # cask "mendeley"
 cask "microsoft-excel"
 cask "microsoft-powerpoint"
@@ -124,7 +127,7 @@ cask "zoom"
 # mas
 
 # mas "BetterSnapTool", id:417375580
-mas "CommentScreen", id:1450950860
+# mas "CommentScreen", id:1450950860
 mas "cotEditor", id: 1024640650
 mas "Dropover", id: 1355679052
 # mas "Kindle", id: 405399194
@@ -135,5 +138,5 @@ mas "LINE", id: 539883307
 mas "Slack", id: 803453959
 # mas "ToyViewer", id: 414298354
 mas "Transporter", id: 1450874784
-mas "Xcode", id: 497799835
+# mas "Xcode", id: 497799835
 
