@@ -1,11 +1,23 @@
 " ====================
 " === vim-plug ===
 " ====================
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/nvim/plugged')
   " monokai-tasty theme
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
   Plug 'patstockwell/vim-monokai-tasty'
   Plug 'ntpeters/vim-better-whitespace'
+  Plug 'preservim/nerdtree'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'tpope/vim-commentary'
 call plug#end()
+
+" NERDTree SETTINGS
+nmap <C-f> :NERDTreeToggle<CR>
+let g:airline#extensions#tabline#enabled = 1
+nmap <C-p> <Plug>AirlineSelectPrevTab
+nmap <C-n> <Plug>AirlineSelectNextTab
 
 "====================
 "===  general settings ===
@@ -51,6 +63,9 @@ noremap <Space>l $
 " ====================
 " 行番号を表示
 set number
+" font
+set guifont=DroidSansMono\ Nerd\ Font\ 13
+set guifontwide=DroidSansMono\ Nerd\ Font\ 13
 " theme
 colorscheme vim-monokai-tasty
 " force background-color to be black
