@@ -31,9 +31,13 @@ export PATH="$HOME/.goenv/bin:$PATH"
 export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
 
-# Android
-export JAVA_HOME=/Applications/Android\ Studio\ Preview.app/Contents/jre/jdk/Contents/Home
-export PATH=/Applications/Android\ Studio\ Preview.app/Contents/jre/jdk/Contents/Home/bin:$PATH
+# sdk
+export JAVA_HOME=$HOME/.sdkman/candidates/java/current
+export PATH=$JAVA_HOME/bin:$PATH
+
+# NeoVim
+
+export XDG_CONFIG_HOME="$HOME/.config"
 
 function cdls() {
     # cdがaliasでループするので\をつける
@@ -70,3 +74,8 @@ SECURE_FILE="secret.zshrc"
 if [[ -f $SECURE_FILE ]]; then
     source "$SECURE_FILE"
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="~/.sdkman"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
+
