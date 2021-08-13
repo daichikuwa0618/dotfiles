@@ -8,7 +8,7 @@ cd dotfiles
 for f in .??*
 do
   # Exclude files
-  if [ "$f" = ".gitmodules" ] || [ "$f" = ".git" ] || [ "$f" = ".gitconfig" ] || [ "$f" = ".zprofile" ] || [ "$f" = ".zshrc_legacy" ] || [ "$f" = ".bash_profile" ] || [ "$f" = ".bashrc" ];then
+  if [ "$f" = ".gitmodules" ] || [ "$f" = ".git" ] || [ "$f" = ".gitconfig" ] || [ "$f" = ".zshrc_legacy" ] || [ "$f" = ".bash_profile" ] || [ "$f" = ".bashrc" ];then
     continue
   fi
 
