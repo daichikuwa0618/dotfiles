@@ -23,6 +23,10 @@ alias vim='nvim'
 alias arm="exec arch -arch arm64e /bin/zsh --login"
 alias x64="exec arch -arch x86_64 /bin/zsh --login"
 
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -32,10 +36,6 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.goenv/bin:$PATH"
 export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
-
-# sdk
-export JAVA_HOME=$HOME/.sdkman/candidates/java/current
-export PATH=$JAVA_HOME/bin:$PATH
 
 # NeoVim
 

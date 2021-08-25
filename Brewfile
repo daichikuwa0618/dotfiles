@@ -1,3 +1,5 @@
+# Homebrew Tap
+
 tap "delphinus/sfmono-square"
 tap "dwarvesf/homebrew-tap"
 tap "homebrew/bundle"
@@ -23,6 +25,7 @@ brew "graphviz"
 brew "hugo"
 # brew "imagemagic"
 brew "java"
+brew "jenv"
 brew "mas"
 brew "mint"
 brew "neovim"
@@ -78,6 +81,7 @@ cask "google-japanese-ime"
 cask "hammerspoon"
 # cask "inkscape"
 cask "iterm2"
+cask "logitech-options"
 # cask "oracle-jdk"
 cask "karabiner-elements"
 cask "keyboard-maestro"
@@ -127,13 +131,13 @@ cask "webpquicklook"
 cask "zeplin"
 cask "zoom"
 
-# mas
+# mas: Mac App Store
 
 # mas "BetterSnapTool", id:417375580
 # mas "CommentScreen", id:1450950860
 mas "cotEditor", id: 1024640650
 mas "Dropover", id: 1355679052
-# mas "Kindle", id: 405399194
+mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
 # mas "Manico", id: 724472954
 # mas "Mathpix", id: 1349670778

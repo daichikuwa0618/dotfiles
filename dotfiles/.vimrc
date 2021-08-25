@@ -19,8 +19,11 @@ call plug#end()
 " NERDTree SETTINGS
 nmap <C-e> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 1
+
+" Airline setting
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
+let g:airline_theme='deus'
 
 "====================
 "===  general settings ===
