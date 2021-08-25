@@ -36,14 +36,14 @@ brew "rbenv-communal-gems"
 brew "reattach-to-user-namespace" # fix tmux [exited]
 brew "ruby-build"
 brew "sfmono-square"
-brew "skhd"
+# brew "skhd"
 # brew "spacebar"
 # brew "swiftlint"
 brew "tmux"
 brew "tree"
 brew "vim"
 # brew "xcodegen"
-brew "yabai"
+# brew "yabai"
 
 # Homebrew cask
 
@@ -86,6 +86,7 @@ cask "logitech-options"
 cask "karabiner-elements"
 cask "keyboard-maestro"
 cask "keycastr"
+cask "kindle"
 # cask "macs-fan-control"
 # cask "mactex"
 cask "meetingbar"
@@ -137,7 +138,6 @@ cask "zoom"
 # mas "CommentScreen", id:1450950860
 mas "cotEditor", id: 1024640650
 mas "Dropover", id: 1355679052
-mas "Kindle", id: 405399194
 mas "LINE", id: 539883307
 # mas "Manico", id: 724472954
 # mas "Mathpix", id: 1349670778
