@@ -24,5 +24,8 @@ printf "    %-25s -> %s\n" "\$DOTPATH/.vimrc" "\$HOME/.config/nvim/init.vim"
 # secret files
 ln -sf "$DOTPATH"/secret.zshrc "$HOME"/secret.zshrc
 printf "    %-25s -> %s\n" "\$DOTPATH/secret.zshrc" "\$HOME/secret.zshrc"
+# global gitignore
+ln -sf "$DOTPATH"/gitignore_global "$HOME"/.config/git/ignore
+printf "    %-25s -> %s\n" "\$DOTPATH/gitignore_global" "\$HOME/.config/git/ignore"
 
 echo ""
