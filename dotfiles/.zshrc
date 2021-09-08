@@ -16,10 +16,12 @@ alias cd='cdls'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias zshrc='vi ~/dotfiles/dotfiles/.zshrc'
+alias vimrc='vi ~/.config/nvim/init.vim'
 alias reload='source ~/.zshrc'
 alias towards14='cd ~/work/Towards14'
 alias vi='nvim'
 alias vim='nvim'
+alias diff='colordiff'
 alias arm="exec arch -arch arm64e /bin/zsh --login"
 alias x64="exec arch -arch x86_64 /bin/zsh --login"
 
@@ -32,13 +34,11 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # goenv
-
 export PATH="$HOME/.goenv/bin:$PATH"
 export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
 
 # NeoVim
-
 export XDG_CONFIG_HOME="$HOME/.config"
 
 function cdls() {
@@ -76,8 +76,4 @@ SECURE_FILE="secret.zshrc"
 if [[ -f $SECURE_FILE ]]; then
     source "$SECURE_FILE"
 fi
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="~/.sdkman"
-[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
 
