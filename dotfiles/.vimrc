@@ -2,6 +2,7 @@
 " === vim-plug ===
 " ====================
 call plug#begin('~/nvim/plugged')
+  Plug 'airblade/vim-gitgutter'
   Plug 'arzg/vim-colors-xcode'
   Plug 'bryanmylee/vim-colorscheme-icons'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -33,6 +34,8 @@ let g:airline_theme='deus'
 "====================
 "===  general settings ===
 " ====================
+" Learder を <Space> にする
+let mapleader = "\<Space>"
 " no swap file
 set noswapfile
 " show inputting command to status
