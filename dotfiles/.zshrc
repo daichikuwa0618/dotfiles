@@ -72,7 +72,7 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
 fi
 
 # load secure file
-SECURE_FILE="secret.zshrc"
+SECURE_FILE="$HOME/secret.zshrc"
 if [[ -f $SECURE_FILE ]]; then
     source "$SECURE_FILE"
 fi
