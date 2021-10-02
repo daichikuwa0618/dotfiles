@@ -25,6 +25,20 @@ alias diff='colordiff'
 alias arm="exec arch -arch arm64e /bin/zsh --login"
 alias x64="exec arch -arch x86_64 /bin/zsh --login"
 
+# アーキテクチャによって brew を切り替える
+ARCH=$(uname -m)
+if [[ $ARCH == arm64 ]]; then
+    echo "Current Architecture: $ARCH"
+    eval $(/opt/homebrew/bin/brew shellenv)
+elif [[ $ARCH == x86_64 ]]; then
+    echo "Current Architecture: $ARCH"
+    eval $(/usr/local/bin/brew shellenv)
+fi
+
+# tig が文字化けするのでローカライズを指定しておく
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
@@ -37,6 +51,11 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.goenv/bin:$PATH"
 export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
+
+# nix package manager
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
+    . $HOME/.nix-profile/etc/profile.d/nix.sh;
+fi
 
 # NeoVim
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -76,4 +95,7 @@ SECURE_FILE="$HOME/secret.zshrc"
 if [[ -f $SECURE_FILE ]]; then
     source "$SECURE_FILE"
 fi
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
