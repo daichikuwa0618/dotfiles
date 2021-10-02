@@ -1,29 +1,15 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+# zshrc
+
+DOTPATH=$HOME/dotfiles
+
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
     source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-alias dotfiles='cd $HOME/dotfiles'
-alias cd='cdls'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias zshrc='vi ~/dotfiles/dotfiles/.zshrc'
-alias vimrc='vi ~/.config/nvim/init.vim'
-alias reload='source ~/.zshrc'
-alias towards14='cd ~/work/Towards14'
-alias vi='nvim'
-alias vim='nvim'
-alias diff='colordiff'
-alias arm="exec arch -arch arm64e /bin/zsh --login"
-alias x64="exec arch -arch x86_64 /bin/zsh --login"
+# embed
+source $DOTPATH/zsh/alias.zshrc
 
 # アーキテクチャによって brew を切り替える
 ARCH=$(uname -m)
