@@ -4,6 +4,7 @@
 call plug#begin('~/nvim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'arzg/vim-colors-xcode'
+  " Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'bryanmylee/vim-colorscheme-icons'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
@@ -14,6 +15,7 @@ call plug#begin('~/nvim/plugged')
     \ Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'vimwiki/vimwiki'
   Plug 'tpope/vim-commentary'
 call plug#end()
 
@@ -30,6 +32,9 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
 let g:airline_theme='deus'
+
+" vimwiki setting
+let g:vimwiki_list = [{'path': '~/Library/Mobile Documents/iCloud~md~obsidian/Documents/obsidian-vault/Note', 'syntax': 'markdown', 'ext': '.md'}]
 
 "====================
 "===  general settings ===
@@ -51,15 +56,23 @@ set backspace=indent,eol,start
 " スペルチェックを有効化
 set spelllang+=cjk " スペルチェックから日本語を除外する
 set spell
+" xで削除した時はヤンクしない
+vnoremap x "_x
+nnoremap x "_x
 
 " ====================
 " === moving settings ===
 " ====================
-" INSERT時はCtrl + {hjkl}でカーソル移動
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
+" Insert モードで Emacs のキーバインドを使えるようにする
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+inoremap <C-a> <C-o>:call <SID>home()<CR>
+inoremap <C-e> <End>
+inoremap <C-d> <Del>
+inoremap <C-h> <BS>
+inoremap <C-k> <C-r>=<SID>kill()<CR>
 " 行が折り返し表示されていた場合、行単位ではなく表示行単位でカーソルを移動する
 nnoremap j gj
 nnoremap k gk
@@ -71,6 +84,8 @@ vnoremap v $h
 inoremap <silent> jj <ESC>
 " escape by typing jk
 inoremap <silent> jk <ESC>
+" escape by typing kj
+inoremap <silent> kj <ESC>
 " SPC+h,l = go to top or tail of sentence
 noremap <Space>h ^
 noremap <Space>l $
