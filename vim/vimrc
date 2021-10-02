@@ -1,0 +1,65 @@
+set runtimepath+=$HOME/dotfiles/vim
+
+" load config files
+
+runtime! config/*.vim
+runtime! config/plugin-config/*.vim
+
+" no swap file
+set noswapfile
+" show inputting command to status
+set showcmd
+" クリップボードの共有
+set clipboard+=unnamed
+" マウスを使う設定
+set mouse=a
+" enable to open other files even when editting buffer
+set hidden
+" バックスペースの削除の設定
+set backspace=indent,eol,start
+" スペルチェックを有効化
+set spelllang+=cjk " スペルチェックから日本語を除外する
+set spell
+" 行番号を表示
+set number
+" font
+set guifont=SF\ Mono\ Square\ 16
+set guifontwide=SF\ Mono\ Square\ 16
+" theme
+colorscheme xcodedark
+" force background-color to be black
+set background=dark
+highlight Normal guibg=black guifg=white
+" use 256 colors
+set t_Co=256
+" シンタックスハイライトを有効
+syntax enable
+" カーソル行の番号をハイライトする
+set cursorline
+" visualise beep sound
+set visualbell
+" indent = smart indent
+set smartindent
+
+" 大文字小文字を区別しない
+set ignorecase
+" 検索文字に大文字がある場合は大文字小文字を区別
+set smartcase
+" インクリメンタルサーチ
+set incsearch
+" 対応する括弧などをハイライト表示する
+set showmatch
+" 対応括弧のハイライト表示を3秒にする
+set matchtime=3
+" 対応括弧に'<'と'>'のペアを追加
+set matchpairs& matchpairs+=<:>
+
+" show Tab as '>-'
+set list listchars=tab:\▸\-
+" replase Tab as half-space
+set expandtab
+" Tab width in not head of line
+set tabstop=2
+" Tab width in head of line
+set shiftwidth=2
+"
