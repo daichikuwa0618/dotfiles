@@ -4,6 +4,7 @@
 <dict>
 	<key>scope</key>
 	<array>
+		<string>/Applications</string>
 		<string>/Applications/Xcode.app/Contents/Applications</string>
 		<string>/Developer/Applications</string>
 		<string>/Library/PreferencePanes</string>
@@ -13,7 +14,6 @@
 		<string>/usr/local/Cellar</string>
 		<string>~/Library/Caches/Metadata</string>
 		<string>~/Library/CloudStorage/iCloudDrive</string>
-		<string>~/Library/Developer/Xcode</string>
 		<string>~/Library/Mobile Documents</string>
 		<string>~/Library/PreferencePanes</string>
 	</array>
