@@ -1,6 +1,4 @@
 #! /bin/zsh
 
-DOTPATH=$HOME/dotfiles/xvim
-
-ln -sf $DOTPATH/xvimrc $HOME/.xvimrc
+ln -sf $DOTPATH/xvim/xvimrc $HOME/.xvimrc
 

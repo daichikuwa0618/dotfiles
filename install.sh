@@ -1,6 +1,6 @@
 #! /bin/sh
 
-DOTPATH=$HOME/dotfiles
+export DOTPATH=$HOME/dotfiles
 
 echo "\$DOTPATH : $DOTPATH"
 echo "Created dotfile symbolic links."
