@@ -13,6 +13,6 @@ alias vi='nvim'
 alias vim='nvim'
 alias diff='colordiff'
 alias arm="exec arch -arch arm64e /bin/zsh --login"
-alias x64="exec arch -arch x86_64 /bin/zsh --login"
+alias intel="exec arch -arch x86_64 /bin/zsh --login"
 alias zettel-dir="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/obsidian-vault"
 
