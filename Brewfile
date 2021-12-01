@@ -102,7 +102,7 @@ cask "microsoft-word"
 cask "mos"
 cask "notion"
 cask "obs"
-cask "obs-virtualcam"
+# cask "obs-virtualcam" # obs に入っている
 cask "obsidian"
 cask "proxyman"
 cask "qlcolorcode"
