@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⟶",
+    "dontautoexpand" : true,
+    "uid" : "d4b9a856-2d21-4e93-936f-6d8101ff70a3",
+    "name" : "longrightarrow",
+    "keyword" : "\\longrightarrow"
+  }
+}

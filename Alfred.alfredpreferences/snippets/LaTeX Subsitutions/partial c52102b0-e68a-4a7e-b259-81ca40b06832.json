@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "∂",
+    "dontautoexpand" : true,
+    "uid" : "c52102b0-e68a-4a7e-b259-81ca40b06832",
+    "name" : "partial",
+    "keyword" : "\\partial"
+  }
+}

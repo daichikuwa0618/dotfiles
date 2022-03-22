@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "—",
+    "dontautoexpand" : true,
+    "uid" : "c17e0f26-1ac2-44fc-9932-b52546521084",
+    "name" : "emdash",
+    "keyword" : "\\emdash"
+  }
+}

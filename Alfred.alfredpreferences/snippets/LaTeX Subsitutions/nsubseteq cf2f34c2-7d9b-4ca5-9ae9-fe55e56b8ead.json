@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⊈",
+    "dontautoexpand" : true,
+    "uid" : "cf2f34c2-7d9b-4ca5-9ae9-fe55e56b8ead",
+    "name" : "nsubseteq",
+    "keyword" : "\\nsubseteq"
+  }
+}

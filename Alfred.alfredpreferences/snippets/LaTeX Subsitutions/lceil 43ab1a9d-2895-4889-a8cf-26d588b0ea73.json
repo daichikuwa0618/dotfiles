@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⌈",
+    "dontautoexpand" : true,
+    "uid" : "43ab1a9d-2895-4889-a8cf-26d588b0ea73",
+    "name" : "lceil",
+    "keyword" : "\\lceil"
+  }
+}

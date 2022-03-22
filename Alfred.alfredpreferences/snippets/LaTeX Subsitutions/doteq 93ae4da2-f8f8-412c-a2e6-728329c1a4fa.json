@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "≐",
+    "dontautoexpand" : true,
+    "uid" : "93ae4da2-f8f8-412c-a2e6-728329c1a4fa",
+    "name" : "doteq",
+    "keyword" : "\\doteq"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⊢",
+    "dontautoexpand" : true,
+    "uid" : "294724db-3e5e-4ac1-bca1-0143896d2ea1",
+    "name" : "vdash",
+    "keyword" : "\\vdash"
+  }
+}

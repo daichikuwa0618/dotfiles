@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "∫",
+    "dontautoexpand" : true,
+    "uid" : "138e1566-e218-418f-bf71-d8a4129fdff0",
+    "name" : "int",
+    "keyword" : "\\int"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⌊",
+    "dontautoexpand" : true,
+    "uid" : "86a72d67-5333-444f-8068-e3797d0c866d",
+    "name" : "lfloor",
+    "keyword" : "\\lfloor"
+  }
+}

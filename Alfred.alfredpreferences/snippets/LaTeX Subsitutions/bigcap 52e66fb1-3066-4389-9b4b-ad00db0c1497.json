@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⋂",
+    "dontautoexpand" : true,
+    "uid" : "52e66fb1-3066-4389-9b4b-ad00db0c1497",
+    "name" : "bigcap",
+    "keyword" : "\\bigcap"
+  }
+}

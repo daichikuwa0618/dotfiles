@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⊋",
+    "dontautoexpand" : true,
+    "uid" : "012c62a6-8499-4eb0-b48d-912e2ff5775f",
+    "name" : "supsetneq",
+    "keyword" : "\\supsetneq"
+  }
+}

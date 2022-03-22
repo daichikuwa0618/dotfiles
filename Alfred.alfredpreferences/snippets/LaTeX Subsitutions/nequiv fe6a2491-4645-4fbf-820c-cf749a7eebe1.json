@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "≢",
+    "dontautoexpand" : true,
+    "uid" : "fe6a2491-4645-4fbf-820c-cf749a7eebe1",
+    "name" : "nequiv",
+    "keyword" : "\\nequiv"
+  }
+}

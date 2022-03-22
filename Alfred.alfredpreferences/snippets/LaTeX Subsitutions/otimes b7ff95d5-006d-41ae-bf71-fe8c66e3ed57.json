@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⊗",
+    "dontautoexpand" : true,
+    "uid" : "b7ff95d5-006d-41ae-bf71-fe8c66e3ed57",
+    "name" : "otimes",
+    "keyword" : "\\otimes"
+  }
+}

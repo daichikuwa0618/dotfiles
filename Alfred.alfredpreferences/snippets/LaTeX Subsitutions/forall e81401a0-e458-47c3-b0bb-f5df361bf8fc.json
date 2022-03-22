@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "∀",
+    "dontautoexpand" : true,
+    "uid" : "e81401a0-e458-47c3-b0bb-f5df361bf8fc",
+    "name" : "forall",
+    "keyword" : "\\forall"
+  }
+}

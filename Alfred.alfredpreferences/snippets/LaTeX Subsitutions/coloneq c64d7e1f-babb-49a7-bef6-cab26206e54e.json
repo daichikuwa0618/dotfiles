@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "≔",
+    "dontautoexpand" : true,
+    "uid" : "c64d7e1f-babb-49a7-bef6-cab26206e54e",
+    "name" : "coloneq",
+    "keyword" : "\\coloneq"
+  }
+}

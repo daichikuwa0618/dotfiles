@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⊆",
+    "dontautoexpand" : true,
+    "uid" : "40052ed3-536c-40ed-b5b2-3907757cbe5b",
+    "name" : "subseteq",
+    "keyword" : "\\subseteq"
+  }
+}

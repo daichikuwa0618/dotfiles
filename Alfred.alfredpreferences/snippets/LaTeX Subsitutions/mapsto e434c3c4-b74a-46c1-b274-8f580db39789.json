@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "↦",
+    "dontautoexpand" : true,
+    "uid" : "e434c3c4-b74a-46c1-b274-8f580db39789",
+    "name" : "mapsto",
+    "keyword" : "\\mapsto"
+  }
+}

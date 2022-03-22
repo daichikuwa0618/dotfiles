@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "∐",
+    "dontautoexpand" : true,
+    "uid" : "51144f78-81cf-406d-b78c-a155297443c0",
+    "name" : "coprod",
+    "keyword" : "\\coprod"
+  }
+}

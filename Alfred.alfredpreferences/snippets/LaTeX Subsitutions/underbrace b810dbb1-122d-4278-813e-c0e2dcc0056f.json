@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⏟",
+    "dontautoexpand" : true,
+    "uid" : "b810dbb1-122d-4278-813e-c0e2dcc0056f",
+    "name" : "underbrace",
+    "keyword" : "\\underbrace"
+  }
+}

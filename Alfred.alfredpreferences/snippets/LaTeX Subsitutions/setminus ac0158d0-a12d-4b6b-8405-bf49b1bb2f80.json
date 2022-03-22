@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "∖",
+    "dontautoexpand" : true,
+    "uid" : "ac0158d0-a12d-4b6b-8405-bf49b1bb2f80",
+    "name" : "setminus",
+    "keyword" : "\\setminus"
+  }
+}

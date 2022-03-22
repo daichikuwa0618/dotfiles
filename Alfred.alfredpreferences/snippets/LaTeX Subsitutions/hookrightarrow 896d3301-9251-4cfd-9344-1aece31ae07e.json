@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "↪",
+    "dontautoexpand" : true,
+    "uid" : "896d3301-9251-4cfd-9344-1aece31ae07e",
+    "name" : "hookrightarrow",
+    "keyword" : "\\hookrightarrow"
+  }
+}

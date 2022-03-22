@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "≼",
+    "dontautoexpand" : true,
+    "uid" : "8850d855-ec9d-4a4f-ac5b-933af5384d09",
+    "name" : "preccurlyeq",
+    "keyword" : "\\preccurlyeq"
+  }
+}

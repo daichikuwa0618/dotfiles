@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "≝",
+    "dontautoexpand" : true,
+    "uid" : "0200c70f-c745-44af-8a0d-1a607a8853c4",
+    "name" : "eqdef",
+    "keyword" : "\\eqdef"
+  }
+}

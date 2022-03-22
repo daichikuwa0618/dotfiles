@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "¬",
+    "dontautoexpand" : true,
+    "uid" : "71341b54-1d7e-4914-aac8-502e9ec53379",
+    "name" : "neg",
+    "keyword" : "\\neg"
+  }
+}

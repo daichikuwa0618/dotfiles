@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "␣",
+    "dontautoexpand" : true,
+    "uid" : "bcee1a83-79f5-4de4-a936-e2faa6f939be",
+    "name" : "textvisiblespace",
+    "keyword" : "\\textvisiblespace"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "⩾",
+    "dontautoexpand" : true,
+    "uid" : "8eb50d67-d687-473a-b859-d623d414b8cc",
+    "name" : "geqslant",
+    "keyword" : "\\geqslant"
+  }
+}
