@@ -1,5 +1,6 @@
 # Homebrew Tap
 
+tap "daipeihust/tap"
 tap "delphinus/sfmono-square"
 tap "dwarvesf/homebrew-tap"
 tap "homebrew/bundle"
@@ -25,6 +26,7 @@ brew "git"
 brew "goenv", args: ["HEAD"]
 brew "graphviz"
 brew "hugo"
+brew "im-select"
 # brew "imagemagic"
 brew "java"
 brew "jenv"
@@ -37,6 +39,7 @@ brew "rbenv"
 brew "rbenv-communal-gems"
 brew "reattach-to-user-namespace" # fix tmux [exited]
 brew "ruby-build"
+brew "rustup-init"
 brew "sfmono-square"
 # brew "skhd"
 # brew "spacebar"
