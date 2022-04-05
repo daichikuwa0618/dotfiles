@@ -57,6 +57,10 @@ function cdls() {
     \cd "$@" && ls
 }
 
+# diff-highlight
+
+export PATH="$PATH:/opt/homebrew/share/git-core/contrib/diff-highlight"
+
 function gwt() {
     GIT_CDUP_DIR=`git rev-parse --show-cdup`
     git worktree add ${GIT_CDUP_DIR}git-worktrees/$1 -b $1
