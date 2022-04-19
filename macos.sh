@@ -58,7 +58,7 @@ defaults write com.apple.dock "show-recents" -bool "false"
 #
 
 # Disable shadow to window capture (default: true)
-defaults write com.apple.screencapture "disable-shadow" -bool "false"
+defaults write com.apple.screencapture "disable-shadow" -bool "true"
 
 # Save location (default: ~/Desktop)
 defaults write com.apple.screencapture "location" -string "~/Desktop"
