@@ -1,1 +1,23 @@
+# tigrc
+
+# date format
+
+set main-view-date = custom
+set main-view-date-format = "%g-%m-%d %R"
+
 set diff-highlight = true
+set wrap-lines = true
+
+# ctrl+F ctrl+B でスクロールする
+
+bind generic <Ctrl-f> move-page-down
+bind generic <Ctrl-b> move-page-up
+
+# + で commit --amend
+bind generic + !git commit --amend --allow-empty
+
+# Ctrl-R で rebase-i
+
+bind main <Ctrl-R> !git rebase -i %(commit)
+bind diff <Ctrl-R> !git rebase -i %(commit)
+
