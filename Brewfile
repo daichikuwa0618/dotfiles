@@ -27,7 +27,7 @@ brew "goenv", args: ["HEAD"]
 brew "graphviz"
 brew "hugo"
 brew "im-select"
-# brew "imagemagic"
+brew "imagemagic"
 brew "java"
 brew "jenv"
 brew "mas"
