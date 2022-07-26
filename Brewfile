@@ -54,6 +54,7 @@ brew "vim"
 
 # Homebrew cask
 
+# cask "activitywatch"
 # cask "adobe-acrobat-reader"
 # cask "alacritty"
 cask "alfred"
@@ -90,7 +91,7 @@ cask "google-japanese-ime"
 cask "hammerspoon"
 # cask "inkscape"
 cask "iterm2"
-# cask "logitech-options"
+cask "logitech-options"
 cask "logseq"
 # cask "oracle-jdk"
 cask "karabiner-elements"
@@ -106,6 +107,7 @@ cask "microsoft-powerpoint"
 cask "microsoft-word"
 # cask "miro"
 cask "mos"
+cask "nightowl"
 cask "notion"
 cask "obs"
 # cask "obs-virtualcam" # obs に入っている
@@ -138,6 +140,7 @@ cask "vimmotion"
 cask "visual-studio-code"
 cask "vlc"
 cask "webpquicklook"
+cask "xcodes"
 # cask "xquartz"
 cask "zeplin"
 cask "zoom"
@@ -147,6 +150,7 @@ cask "zoom"
 # mas "BetterSnapTool", id:417375580
 # mas "CommentScreen", id:1450950860
 mas "cotEditor", id: 1024640650
+mas "DaVinci Resolve", id: 571213070
 mas "Dropover", id: 1355679052
 # mas "LINE", id: 539883307
 # mas "Manico", id: 724472954
