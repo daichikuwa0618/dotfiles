@@ -10,6 +10,7 @@ fi
 
 # embed
 source $DOTPATH/zsh/alias.zshrc
+source $DOTPATH/zsh/fzf.zshrc
 
 # アーキテクチャによって brew を切り替える
 ARCH=$(uname -m)
@@ -43,6 +44,9 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.goenv/bin:$PATH"
 export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
+
+# mint
+export PATH="$PATH:$HOME/.mint/bin"
 
 # nix package manager
 if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
@@ -93,5 +97,8 @@ if [[ -f $SECURE_FILE ]]; then
 fi
 
 # fzf
+# .git を対象から除く
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore DerivedData -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
