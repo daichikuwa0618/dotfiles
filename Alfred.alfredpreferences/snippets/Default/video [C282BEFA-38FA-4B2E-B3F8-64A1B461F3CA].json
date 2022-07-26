@@ -3,6 +3,6 @@
     "snippet" : "<video width=\"300\" src=\"{clipboard}\">",
     "uid" : "C282BEFA-38FA-4B2E-B3F8-64A1B461F3CA",
     "name" : "<video>",
-    "keyword" : "video tag"
+    "keyword" : "!!video"
   }
 }

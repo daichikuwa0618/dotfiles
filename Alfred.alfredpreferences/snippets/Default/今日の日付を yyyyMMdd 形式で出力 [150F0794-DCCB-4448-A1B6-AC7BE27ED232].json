@@ -1,9 +1,8 @@
 {
   "alfredsnippet" : {
     "snippet" : "{date: yyyyMMdd}",
-    "dontautoexpand" : true,
     "uid" : "150F0794-DCCB-4448-A1B6-AC7BE27ED232",
     "name" : "今日の日付を yyyyMMdd 形式で出力",
-    "keyword" : "today"
+    "keyword" : "!!today"
   }
 }
