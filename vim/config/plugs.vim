@@ -13,6 +13,7 @@ call plug#begin('~/nvim/plugged')
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'preservim/nerdtree' |
     \ Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'sainnhe/everforest'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'vimwiki/vimwiki'

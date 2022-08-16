@@ -26,7 +26,7 @@ set number
 set guifont=SF\ Mono\ Square\ 16
 set guifontwide=SF\ Mono\ Square\ 16
 " theme
-colorscheme xcodedark
+colorscheme everforest
 " force background-color to be black
 set background=dark
 highlight Normal guibg=black guifg=white
