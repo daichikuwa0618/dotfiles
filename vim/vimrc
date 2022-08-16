@@ -22,6 +22,8 @@ set spelllang+=cjk " スペルチェックから日本語を除外する
 set spell
 " 行番号を表示
 set number
+" gitgutter 等でガタつくので常に signcolumn を表示しておく
+set signcolumn=yes
 " font
 set guifont=SF\ Mono\ Square\ 16
 set guifontwide=SF\ Mono\ Square\ 16
@@ -40,6 +42,8 @@ set cursorline
 set visualbell
 " indent = smart indent
 set smartindent
+" GitGutter の更新時間を設定
+set updatetime=200
 
 " 大文字小文字を区別しない
 set ignorecase
