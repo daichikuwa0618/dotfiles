@@ -13,6 +13,7 @@ tap "homebrew/cask-fonts"
 
 # Homebrew
 
+brew "betterdisplay"
 brew "bitwarden-cli"
 # brew "carthage"
 brew "colordiff"
