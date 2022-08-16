@@ -116,3 +116,5 @@ fabric.properties
 ## User settings
 xcuserdata/
 
+git-worktrees/
+
