@@ -3,6 +3,6 @@
     "snippet" : "<details><summary><b>{cursor}<\/b><\/summary><div>\n\n<\/div><\/details>",
     "uid" : "E18E656A-6A52-4D61-B8B3-4E2725CFFB3C",
     "name" : "折りたたみ",
-    "keyword" : "!!details"
+    "keyword" : "!details"
   }
 }
