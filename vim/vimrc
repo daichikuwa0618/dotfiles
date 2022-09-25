@@ -66,4 +66,7 @@ set expandtab
 set tabstop=2
 " Tab width in head of line
 set shiftwidth=2
-"
+
+" Fern で nerdfont を使う
+let g:fern#renderer = 'nerdfont'
+
