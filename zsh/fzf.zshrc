@@ -36,6 +36,6 @@ function gwtrm() {
   fi
 
   echo "removing worktree at: ${selectedWorktreeDir}"
-  git worktree remove ${selectedWorktreeDir}
+  git worktree remove $1 ${selectedWorktreeDir}
 }
 
