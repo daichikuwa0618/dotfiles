@@ -15,6 +15,9 @@ noremap <Space>h ^
 noremap <Space>l $
 " 検索のハイライトをESC 2回で消す
 nnoremap <ESC><ESC> :nohlsearch<CR>
+" very magic を使う
+" See http://stevelosh.com/blog/2010/09/coming-home-to-vim
+nnoremap / /\v
 
 " MARK: - insert mode mapping
 
@@ -49,5 +52,7 @@ vnoremap x "_x
 nnoremap x "_x
 " vを二回で行末まで選択
 vnoremap v $h
-
+" very magic を使う
+" See http://stevelosh.com/blog/2010/09/coming-home-to-vim
+vnoremap / /\v
 
