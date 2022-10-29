@@ -1,9 +1,8 @@
 {
   "alfredsnippet" : {
     "snippet" : "<img width=\"300\" src=\"{clipboard}\">",
-    "dontautoexpand" : true,
     "uid" : "4B460B43-D520-4B9F-8CA6-5F7EF6BEEFCD",
     "name" : "<img>",
-    "keyword" : "img"
+    "keyword" : "::img"
   }
 }
