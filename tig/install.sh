@@ -1,4 +1,6 @@
-#! /bin/zsh
+#!/bin/zsh
 
-ln -sf $HOME/dotfiles/tig/tigrc $HOME/.tigrc
+DOTPATH_TIG=$(cd $(dirname $0); pwd)
+
+ln -sf $DOTPATH_TIG/tigrc $HOME/.tigrc
 

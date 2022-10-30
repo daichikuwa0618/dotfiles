@@ -1,16 +1,13 @@
 # zshrc
 
-DOTPATH=$HOME/dotfiles
-
-
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
     source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
 # embed
-source $DOTPATH/zsh/alias.zshrc
-source $DOTPATH/zsh/fzf.zshrc
+source $HOME/zsh/alias.zshrc
+source $HOME/zsh/fzf.zshrc
 
 # アーキテクチャによって brew を切り替える
 ARCH=$(uname -m)

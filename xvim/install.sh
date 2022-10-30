@@ -1,4 +1,6 @@
-#! /bin/zsh
+#!/bin/zsh
 
-ln -sf $DOTPATH/xvim/xvimrc $HOME/.xvimrc
+DOTPATH_XVIM=$(cd $(dirname $0); pwd)
+
+ln -sf $DOTPATH_XVIM/xvimrc $HOME/.xvimrc
 

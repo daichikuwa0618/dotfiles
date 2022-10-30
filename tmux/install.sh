@@ -1,4 +1,6 @@
-#! /bin/sh
+#!/bin/zsh
 
-ln -sf $DOTPATH/tmux/tmux.conf $HOME/.tmux.conf
+DOTPATH_TMUX=$(cd $(dirname $0); pwd)
+
+ln -sf $DOTPATH_TMUX/tmux.conf $HOME/.tmux.conf
 

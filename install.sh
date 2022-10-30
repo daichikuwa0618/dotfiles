@@ -1,10 +1,9 @@
-#! /bin/sh
+#!/bin/zsh
 
-export DOTPATH=$HOME/dotfiles
+DOTPATH=$(cd $(dirname $0); pwd)
 
 echo "\$DOTPATH : $DOTPATH"
 echo "Created dotfile symbolic links."
-cd $DOTPATH
 
 echo "start tmux"
 sh $DOTPATH/tmux/install.sh
@@ -23,14 +22,13 @@ sh $DOTPATH/zsh/install.sh
 echo "end zsh"
 
 # global gitignore
-ln -sf "$DOTPATH"/gitignore_global "$HOME"/.config/git/ignore
+ln -sf $DOTPATH/gitignore_global $HOME/.config/git/ignore
 printf "    %-25s -> %s\n" "\$DOTPATH/gitignore_global" "\$HOME/.config/git/ignore"
-ln -sf "$DOTPATH"/gitconfig "$HOME"/.gitconfig
+ln -sf $DOTPATH/gitconfig $HOME/.gitconfig
 printf "    %-25s -> %s\n" "\$DOTPATH/gitconfig" "\$HOME/.gitconfig"
 
 # lazygit の置き場を変更
 lazygit -ucd ~/.config/lazygit
-ln -sf "$DOTPATH"/lazygit.yml "$HOME"/.config/lazygit/config.yml
+ln -sf $DOTPATH/lazygit.yml $HOME/.config/lazygit/config.yml
 printf "    %-25s -> %s\n" "\$DOTPATH/lazygit.yml" "\$HOME/.config/lazygit/config.yml"
 
-echo ""
