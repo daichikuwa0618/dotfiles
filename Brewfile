@@ -52,6 +52,7 @@ brew "tig"
 brew "tmux"
 brew "tree"
 brew "vim"
+brew "xclogparser"
 # brew "xcodegen"
 # brew "yabai"
 
