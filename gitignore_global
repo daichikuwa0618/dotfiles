@@ -115,6 +115,7 @@ fabric.properties
 
 ## User settings
 xcuserdata/
+DerivedData/
 
 git-worktrees/
 
