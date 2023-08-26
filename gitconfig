@@ -1,6 +1,7 @@
 [user]
-    name = Daichi Hayashi
-    email = daichikuwa0618@gmail.com
+	name = Daichi Hayashi
+	email = develop@daichidaiji.com
+	signingkey = 649110C2B0074FD9
 
 [core]
     pager = delta
@@ -20,3 +21,9 @@
 [diff]
     colorMoved = default
 
+[credential]
+	helper = osxkeychain
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[commit]
+	gpgsign = true
