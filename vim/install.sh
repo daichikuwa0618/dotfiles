@@ -4,7 +4,8 @@ DOTPATH_VIM=$(cd $(dirname $0); pwd)
 
 # AstroNvim を使うので通常の vimrc の symlink はコメントアウトしておく
 # AstroNvim を辞めたくなったら戻せば OK
-ln -sf $DOTPATH_VIM/astronvim_config.init.lua $HOME/.config/nvim/lua/user/init.lua
+# AstroNvim の設定は https://github.com/daichikuwa0618/AstroNvimConfiguration に移動
+# ln -sf $DOTPATH_VIM/astronvim_config.init.lua $HOME/.config/nvim/lua/user/init.lua
 
 # for NeoVim
 # ln -sf $DOTPATH_VIM/vimrc $HOME/.config/nvim/init.vim
