@@ -1,7 +1,7 @@
 [user]
-	name = Daichi Hayashi
-	email = d_hayashi@yumemi.co.jp
-	signingkey = 6D3D59877F31CB38
+    name = Daichi Hayashi
+    email = d_hayashi@yumemi.co.jp
+    signingkey = 6D3D59877F31CB38
 
 [core]
     pager = delta
@@ -21,6 +21,11 @@
 [diff]
     colorMoved = default
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [credential]
 	helper = osxkeychain
 [gpg]
