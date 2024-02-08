@@ -1,7 +1,20 @@
-[user]
-    name = Daichi Hayashi
-    email = d_hayashi@yumemi.co.jp
-    signingkey = 6D3D59877F31CB38
+[ghq]
+	root = ~/Developer
+
+[include]
+    path = "~/.gitconfig_daichidaiji"
+
+[includeIf "gitdir:~/Developer/github.com/yumemi/"]
+    path = "~/.gitconfig_yumemi"
+
+[includeIf "gitdir:~/Developer/github.com/yumemi-inc/"]
+    path = "~/.gitconfig_yumemi"
+
+[includeIf "gitdir:~/Developer/github.com/bunpoapp/"]
+    path = "~/.gitconfig_daichidaiji"
+
+[includeIf "gitdir:~/Developer/github.com/OneSipSake/"]
+    path = "~/.gitconfig_daichidaiji"
 
 [core]
     pager = delta
