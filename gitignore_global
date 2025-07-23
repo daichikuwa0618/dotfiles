@@ -119,3 +119,5 @@ DerivedData/
 
 git-worktrees/
 
+
+**/.claude/settings.local.json

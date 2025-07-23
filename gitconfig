@@ -45,3 +45,6 @@
 	program = /opt/homebrew/bin/gpg
 [commit]
 	gpgsign = true
+[user]
+	name = Daichi Hayashi
+	email = develop@daichidaiji.com
