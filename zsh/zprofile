@@ -22,3 +22,6 @@ bindkey "^N" history-beginning-search-forward-end
 # alias
 alias diff="coloddiff"
 
+
+# Added by Obsidian
+export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
