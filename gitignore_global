@@ -118,6 +118,7 @@ xcuserdata/
 DerivedData/
 
 git-worktrees/
+.worktrees/
 
 
 **/.claude/settings.local.json
