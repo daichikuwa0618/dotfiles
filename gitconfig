@@ -48,3 +48,11 @@
 [user]
 	name = Daichi Hayashi
 	email = develop@daichidaiji.com
+[gtr "ai"]
+	default = claude
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
