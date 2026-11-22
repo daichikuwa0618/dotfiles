@@ -17,4 +17,6 @@ alias intel="exec arch -arch x86_64 /bin/zsh --login"
 alias xcode="xed ."
 alias zettel-dir="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/obsidian-vault"
 alias lg="lazygit"
+alias dart="fvm dart"
+alias flutter="fvm flutter"
 

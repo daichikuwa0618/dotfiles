@@ -45,6 +45,15 @@ eval "$(goenv init -)"
 # mint
 export PATH="$PATH:$HOME/.mint/bin"
 
+# Android debug bridge (adb)
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
+
+# dart pub
+export PATH=$PATH:$HOME/.pub-cache/bin
+
+# fvm
+export PATH=$PATH:$HOME/fvm/default/bin
+
 # nix package manager
 if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then
     . $HOME/.nix-profile/etc/profile.d/nix.sh;
@@ -99,3 +108,8 @@ export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore DerivedData -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f $HOME/.config/.dart-cli-completion/zsh-config.zsh ]] && . $HOME/.config/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
